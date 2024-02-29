@@ -1,0 +1,70 @@
+@include max(d-1200){
+    .cross-puzzle{
+        .question-answer{
+            .question{
+                ol{
+                    li{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+@include max(d-600){
+    .cross-puzzle{
+        padding-block: 30px 52px;
+        .puzzle-h2{
+            font-size: 18px;
+        }
+        .after-submit{
+            h3{
+                font-size: 20px;
+                line-height: 28px;
+            }
+            p{
+                font-size: 14px;
+                line-height: 28px;
+                margin-bottom: 29px;
+            }
+            h2{
+                font-size: 28px;
+                line-height: 39px;
+            }
+        }
+        .question-answer{
+            padding-block: 24px 52px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 40px;
+            .puzzle{
+                overflow-x: scroll;
+                max-width: 300px;
+            }
+            .question{
+                .que{
+                    ol{
+                        margin-bottom: 19px;
+                    }
+                }
+                h3{
+                    font-size: rem(18px) !important;
+                }
+                ol{
+                    li{
+                        font-size: 16px;
+                        line-height: 28px;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .puzzle-start-before{
+        padding-block: 47px 48px;
+        p{
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+}

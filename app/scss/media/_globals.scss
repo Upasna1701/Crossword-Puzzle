@@ -1,0 +1,140 @@
+@include max(d-1680) {
+  html,
+  body {
+    $rem-size: 20px;
+    font-size: $rem-size;
+  }
+  
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: rem(1560px);
+    padding-inline: 50px;
+  }
+}
+
+@include max(d-1600) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: rem(calc(1360px + 36px));
+    padding: 0;
+  }
+}
+
+@include max(d-1440) {
+  html,
+  body {
+    $rem-size: 18px;
+    font-size: $rem-size;
+  }
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: rem(calc(1420px + 36px));
+    padding-inline: rem(60px);
+  }
+}
+
+@include max(d-1400) {
+  html,
+  body {
+    $rem-size: 16px;
+    font-size: $rem-size;
+  }
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: rem(calc(1166px));
+    padding-inline: 0;
+  }
+}
+
+@include max(d-1300) {
+  body {
+    $rem-size: 17px;
+    font-size: $rem-size;
+  }
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: rem(1440px);
+    padding: 0;
+  }
+}
+
+@include max(d-1200) {
+  html,
+  body {
+    $rem-size: 15px;
+    font-size: $rem-size;
+  }
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: rem(1240px);
+    padding-inline: 25px;
+  }
+}
+
+@include max(d-991) {
+  html,
+  body {
+    $rem-size: 12px;
+    font-size: $rem-size;
+  }
+}
+
+@include max(d-820) {
+  html,
+  body {
+    $rem-size: 10px;
+    font-size: $rem-size;
+  }
+}
+
+@include max(d-720) {
+  html,
+  body {
+    $rem-size: 9px;
+    font-size: $rem-size;
+  }
+  // main{
+  //   padding-top: rem(69px);
+  // }
+}
+
+@include max(d-600) {
+  html,
+  body {
+    $rem-size: 16px;
+    font-size: $rem-size;
+  }
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 100%;
+    padding-inline: mrem(22px);
+  }
+}

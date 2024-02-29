@@ -1,0 +1,147 @@
+.cross-puzzle{
+    background: #F0F3FA;
+    padding-block: 0 rem(26px);
+    .puzzle-h2{
+        text-align: center;
+        margin-bottom: 0;
+        font-weight: $font-eb;
+    }
+    .after-submit{
+        display: none;
+        text-align: center;
+        h3{
+            font-size: rem(32px);
+            line-height: rem(45px);
+            font-weight: $font-eb;
+            margin-bottom: 0;
+        }
+        p{
+            font-size: rem(21px);
+            line-height: rem(35px);
+            margin-bottom: rem(40px);
+        }
+        h2{
+            font-size: rem(32px);
+            line-height: rem(48px);
+            font-weight: $font-b;
+            margin-bottom: 0;
+        }
+    }
+    .question-answer{
+        padding-block: rem(60px) rem(25px);
+        display: flex;  
+        align-items: center;
+        justify-content: center;
+        gap: rem(70px);
+        .puzzle{
+            form{
+                .grid{
+                    display: grid;
+                    grid-template-columns: repeat(17, 1fr);
+                    grid-template-rows: repeat(13, 1fr);
+                    
+                    .cell {
+                        width: 2rem;
+                        height: 2rem;
+                        border: 1px solid #707070;
+                        position: relative;
+                        span{
+                            position: absolute;
+                            top: 2%;
+                            left: 4%;
+                            font-size: rem(10px);
+                            font-weight: $font-b;
+                        }
+                        input {
+                            width: 100%;
+                            height: 100%;
+                            border: none;
+                            font-size: 16px;
+                            text-transform: uppercase;
+                            text-align: center;
+                            padding: 0;
+                            cursor: pointer;
+                            border-radius: 0;
+                            background: #fff;
+                            outline: 0;
+                        }
+                        input:focus {
+                            outline: none;
+                        }
+                    }
+                    .brd-top{
+                        border-top: 0;
+                    }
+                    .brd-left{
+                        border-left: 0;
+                    }
+                    .brd-btm{
+                        border-bottom: 0;
+                    }
+                    .brd-right{
+                        border-right: 0;
+                    }
+                    .empty-cell {
+                        width: 2rem;
+                        height: 2rem;
+                    }
+                }
+            }
+        }
+        .question{
+            .que{
+                ol{
+                    margin-bottom: rem(30px);
+                }
+            }
+            h3{
+                font-size: rem(20px) !important;
+                line-height: rem(34px);
+                font-weight: $font-eb;
+                margin-bottom: 0;
+            }
+            ol{
+                padding-left: 0;
+                li{
+                    font-size: rem(18px);
+                    line-height: rem(34px);
+                    color: $p-color;
+                    font-weight: $font-b;
+                    display: flex;
+                    span{
+                        display: none;
+                        // color: #4BB10B;
+                        // color: #EF5353;
+                    }
+                }
+            }
+        }
+    }
+
+    .form-submit{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .submit-btn{
+            display: inline-flex;
+            align-items: center;
+            gap: rem(16px);
+            justify-content: center;
+            padding: rem(12.5px) rem(32px); 
+            background-color: #407BFF; 
+            color: #fff; 
+            text-transform: capitalize; 
+            font-weight: $font-eb;
+            font-size: rem(20px); 
+            border-radius: rem(8px);
+            cursor: pointer;
+            width: fit-content;
+            outline: 0;
+            border: none;
+            img{
+                width: rem(27px);
+            }
+        }
+    }
+    
+}
